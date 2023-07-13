@@ -1,1 +1,1 @@
-USACO Class
+Some [USACO](http://www.usaco.org/index.php) and [Codeforces](https://codeforces.com/) I did for a class.
