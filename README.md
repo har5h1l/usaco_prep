@@ -1,1 +1,0 @@
-Some [USACO](http://www.usaco.org/index.php) and [Codeforces](https://codeforces.com) problems I did for a class
