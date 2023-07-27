@@ -1,12 +1,13 @@
 # https://codeforces.com/contest/1811/problem/A
 
 for _ in range(int(input())):
-    n, d = input().split()
-    s = input().split()
-    x = int(n) - len(s) # number of additional digits
+    n, d = list(map(int, input().split()))
+    s = input().split() + ['-1']
 
-    if x > 0:
-        for i in range(int(n)): 
-            if s[i] < d: s.insert(i, d * x)
-    
-    print(''.join(s))
+    for i in range(n+1): 
+        print(i, s[i])
+        if int(s[i]) <= d: 
+            s.insert(i, str(d))
+            break
+        
+    print(''.join(s[:len(s) - 1]))
